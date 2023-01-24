@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": "com-demo-gauge",
-			"url": "https://example.demo/box/box.js",
+			"url": "https://mhp-management-und-it.eu10.hcs.cloud.sap/sap/fpa/ui/app.html#/home/box.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "com-demo-gauge-sps",
-			"url": "https://example.demo/box/box_sps.js",
+			"url": "https://mhp-management-und-it.eu10.hcs.cloud.sap/sap/fpa/ui/app.html#/home/box_sps.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "com-demo-box-bps",
-			"url": "https://example.demo/box/box_bps.js",
+			"url": "https://mhp-management-und-it.eu10.hcs.cloud.sap/sap/fpa/ui/app.html#/home/box_bps.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
