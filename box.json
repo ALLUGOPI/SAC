@@ -4,7 +4,7 @@
 	"name": "Demo Gauge",
 	"description": "A gauge demo",
 	"newInstancePrefix": "Gauge",
-	"icon": "https://example.demo/box/icon.png",
+	"icon": "https://mhp-management-und-it.eu10.hcs.cloud.sap/sap/fpa/ui/app.html#/home/box/icon.png",
 	"vendor": "Demo",
 	"eula": "EULA",
 	"license": "1.0",
