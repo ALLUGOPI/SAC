@@ -2,7 +2,7 @@
 	"id": "com.demo.gauge",
 	"version": "1.0.0",
 	"name": "Demo Gauge",
-	"description": "A gauge demo",
+	"description": "A high-performance semi-circle gauge widget",
 	"newInstancePrefix": "Gauge",
 	"icon": "https://mhp-management-und-it.eu10.hcs.cloud.sap/sap/fpa/ui/app.html#/home/box/icon.png",
 	"vendor": "Demo",
@@ -34,60 +34,56 @@
 	"properties": {
 		"value": {
 			"type": "number",
-			"description": "Gauge value",
-			"default": "0"
+			"description": "Current percentage (0-100)",
+			"default": 0
 		},
 		"info": {
 			"type": "string",
-			"description": "Gauge info",
-			"default": ""
+			"description": "Label displayed below the percentage",
+			"default": "Total"
 		},
 		"color": {
 			"type": "string",
-			"description": "Text Color info",
-			"default": "#3498db"
+			"description": "Primary color for the arc and text",
+			"default": "#27ae60"
 		},
 		"width": {
 			"type": "integer",
-			"default": 100
+			"default": 300
 		},
 		"height": {
 			"type": "integer",
-			"default": 100
+			"default": 200
 		}
 	},
 	"methods": {
 		"setValue": {
-			"description": "Sets the Gauge value.",
+			"description": "Updates all gauge parameters at once.",
 			"parameters": [
 				{
 					"name": "newValue",
-					"type": "number",
-					"description": "Gauge value"
+					"type": "number"
 				},
 				{
 					"name": "newInfo",
-					"type": "string",
-					"description": "Gauge info"
+					"type": "string"
 				},
 				{
 					"name": "newColor",
-					"type": "string",
-					"description": "Text Color info"
+					"type": "string"
 				}
 			],
 			"body": "this.value = newValue; this.info = newInfo; this.color = newColor;"
 		},
 		"getValue": {
 			"returnType": "number",
-			"description": "Returns the Gauge value.",
+			"description": "Returns the current gauge value.",
 			"body": "return this.value;"
 		}
 	},
 	"events": {
 		"onClick": {
-			"description": "Called when the user clicks the Box."
+			"description": "Fired when the gauge is clicked."
 		}
 	}
 }
-
